@@ -9,6 +9,7 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
+      "bundleIdentifier": "com.dineordash.app",
       "supportsTablet": true
     },
     "android": {
@@ -24,6 +25,12 @@
     },
     "plugins": [
       "expo-router",
+      [
+        "@react-native-google-signin/google-signin",
+        {
+          "iosUrlScheme": "com.googleusercontent.apps.600171342266-u60hio0j35th6s5el90gkd1l7tgobd5r"
+        }
+      ],
       [
         "expo-splash-screen",
         {
