@@ -5,7 +5,7 @@ import { GoogleSignin, GoogleSigninButton, statusCodes } from '@react-native-goo
 const Login = () => {
   useEffect(() => {
     GoogleSignin.configure({
-      webClientId: '600171342266-u60hio0j35th6s5el90gkd1l7tgobd5r.apps.googleusercontent.com',
+      iosClientId: '600171342266-u60hio0j35th6s5el90gkd1l7tgobd5r.apps.googleusercontent.com',
     });
   }, []);
 
@@ -30,12 +30,12 @@ const Login = () => {
   return (
     <View>
       <GoogleSigninButton
-        style={{ width: 192, height: 48 }}
+        style={{ width: 192, height: 48, margin: 50 }}
         size={GoogleSigninButton.Size.Wide}
         color={GoogleSigninButton.Color.Dark}
         onPress={signIn}
       />
-      <Button title="Sign In with Google" onPress={signIn} />
+      {/* <Button title="Sign In with Google" onPress={signIn} /> */}
     </View>
   );
 };
